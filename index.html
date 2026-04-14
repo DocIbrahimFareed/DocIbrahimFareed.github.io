@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Medical MCQ Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search questions...">
+        </div>
+        <div class="header-stats">
+            <span>Total: <span id="totalCount">0</span></span>
+            <span>Progress: <span id="progressCount">0</span></span>
+        </div>
+    </header>
+
+    <main id="quizContainer">
+        </main>
+
+    <nav class="bottom-nav">
+        <button onclick="switchTab('all')" id="tab-all" class="active">📚 All</button>
+        <button onclick="switchTab('exam')" id="tab-exam">📝 Exam</button>
+        <button onclick="switchTab('favs')" id="tab-favs">⭐ Favs</button>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>
